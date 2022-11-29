@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { useQuery } from "react-query";
 
@@ -7,17 +7,30 @@ import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 function Blog() {
+  //State for next,prev Page
+  const [page, setpage] = useState(1);
+
   const {
     isLoading,
     error,
     data: articles,
-  } = useQuery("articles", () =>
-    fetch("https://dev.to/api/articles/").then((res) => res.json())
+    isError,
+    isFetching,
+    isPreviousData,
+  } = useQuery(
+    "articles",
+    () =>
+      fetch(`https://dev.to/api/articles?page=${page}&per_page=9`).then((res) =>
+        res.json()
+      ),
+    { keepPreviousData: true }
   );
 
   if (isLoading) return "Loading...";
 
-  if (error) return "An error has occurred: " + error.message;
+  if (isFetching) return "Loading...";
+
+  if (isError) return "An error has occurred: " + error.message;
 
   return (
     <>
@@ -42,7 +55,10 @@ function Blog() {
         >
           <div className="grid gap-5 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
             {articles.map((article) => (
-              <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
+              <div
+                key={article.id}
+                className="overflow-hidden transition-shadow duration-300 bg-white rounded"
+              >
                 <a href={article.url} target="_blank" aria-label="Article">
                   <img
                     src={article.social_image}
@@ -138,6 +154,25 @@ function Blog() {
             ))}
           </div>
         </AnimationOnScroll>
+      </div>
+
+      <div className="nav btn-container flex justify-between items-center max-w-[90%] mx-auto mb-20">
+        <button
+          isPreviousData={isPreviousData}
+          className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-indigo-600 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+          onClick={() => setpage((prevState) => Math.max(prevState - 1, 0))}
+          disabled={page === 1}
+        >
+          Prev Page
+        </button>
+
+        <button
+          isPreviousData={isPreviousData}
+          className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-indigo-600 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+          onClick={() => setpage((prevState) => prevState + 1)}
+        >
+          Next Page
+        </button>
       </div>
     </>
   );
