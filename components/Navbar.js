@@ -2,6 +2,8 @@ import Image from "next/image";
 import blogLogo from "../public/blog.png";
 import Link from "next/link";
 
+import { Link as Link1 } from "react-scroll";
+
 export default function Example() {
   return (
     <>
@@ -13,52 +15,42 @@ export default function Example() {
             </a>
           </div>
 
-          <Link
-            href="/"
-            className="text-base font-medium text-gray-500 hover:text-gray-900"
-          >
-            <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+          <Link href="/">
+            <a className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
               Home
             </a>
           </Link>
 
-          <Link
-            href="/"
-            className="text-base font-medium text-gray-500 hover:text-gray-900"
+          <Link1
+            spy={true}
+            smooth={true}
+            offset={-40}
+            duration={1000}
+            to="blogTop"
+            className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900"
           >
-            <a className="text-base font-medium text-gray-500 hover:text-gray-900">
-              Blog
-            </a>
-          </Link>
+            Blog
+          </Link1>
 
-          <Link
-            href="/"
-            className="text-base font-medium text-gray-500 hover:text-gray-900"
-          >
-            <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+          <Link href="/">
+            <a className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
               Contact
             </a>
           </Link>
 
           <Link href="/about">
-            <a className="text-base font-medium text-gray-500 hover:text-gray-900">
+            <a className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
               About
             </a>
           </Link>
 
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-            <Link
-              href="#"
-              className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
-            >
+            <Link href="#">
               <a className="text-base font-medium text-gray-500 hover:text-gray-900">
                 Sign In
               </a>
             </Link>
-            <Link
-              href="#"
-              className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
-            >
+            <Link href="#">
               <a className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">
                 Sign Up
               </a>
