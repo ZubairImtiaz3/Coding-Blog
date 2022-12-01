@@ -96,7 +96,7 @@ function Blog() {
                     </Link>
                     <p className="mb-4 text-gray-700">{article.description}</p>
                     <div className="flex space-x-4">
-                      <a
+                      <Link
                         href="/"
                         aria-label="Likes"
                         className="flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group"
@@ -129,8 +129,8 @@ function Blog() {
                         <p className="font-semibold">
                           {article.public_reactions_count}
                         </p>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         href="/"
                         aria-label="Comments"
                         className="flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group"
@@ -163,7 +163,7 @@ function Blog() {
                         <p className="font-semibold">
                           {article.comments_count}
                         </p>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
