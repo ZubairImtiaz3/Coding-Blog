@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 function about() {
   return (
@@ -10,14 +11,14 @@ function about() {
               <div className="-mx-3 flex items-center sm:-mx-4">
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="py-3 sm:py-4">
-                    <img
+                    <Image
                       src="https://cdn.tailgrids.com/1.0/assets/images/services/image-1.jpg"
                       alt=""
                       className="w-full rounded-2xl"
                     />
                   </div>
                   <div className="py-3 sm:py-4">
-                    <img
+                    <Image
                       src="https://cdn.tailgrids.com/1.0/assets/images/services/image-2.jpg"
                       alt=""
                       className="w-full rounded-2xl"
@@ -26,7 +27,7 @@ function about() {
                 </div>
                 <div className="w-full px-3 sm:px-4 xl:w-1/2">
                   <div className="relative z-10 my-4">
-                    <img
+                    <Image
                       src="https://cdn.tailgrids.com/1.0/assets/images/services/image-3.jpg"
                       alt=""
                       className="w-full rounded-2xl"

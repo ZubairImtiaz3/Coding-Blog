@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useQuery } from "react-query";
+import Image from "next/image";
+import Link from "next/link";
 
 // Animation
 import "animate.css/animate.min.css";
@@ -65,27 +67,33 @@ function Blog() {
                   key={article.id}
                   className="overflow-hidden transition-shadow duration-300 bg-white rounded"
                 >
-                  <a href={article.url} target="_blank" aria-label="Article">
-                    <img
+                  <Link
+                    href={article.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="Article"
+                  >
+                    <Image
                       src={article.social_image}
                       className="object-contain w-full h-64 rounded"
                       alt="IMG LOADING"
                     />
-                  </a>
+                  </Link>
                   <div className="py-5">
                     <p className="mb-2 text-xs font-semibold text-gray-600 uppercase">
                       {article.readable_publish_date}
                     </p>
-                    <a
+                    <Link
                       href={article.url}
                       target="_blank"
+                      rel="noreferrer"
                       aria-label="Article"
                       className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                     >
                       <p className="text-2xl font-bold leading-[26px]">
                         {article.title}
                       </p>
-                    </a>
+                    </Link>
                     <p className="mb-4 text-gray-700">{article.description}</p>
                     <div className="flex space-x-4">
                       <a
