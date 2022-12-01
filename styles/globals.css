@@ -4,3 +4,31 @@
   --animate-duration: 3s;
 }
 @tailwind utilities;
+
+/* SCROLLTOTHETOP */
+
+.react-scrolltop-button {
+  display: flex;
+  align-items: center;
+  width: 2.888rem;
+  height: 2.888rem;
+  right: 1.4% !important;
+  bottom: 2.5% !important;
+  background-color: #4f46e5 !important;
+  padding: 12px !important;
+  border: 0px solid #000000 !important;
+  border-radius: 8.471rem !important;
+}
+.react-scrolltop-button {
+  color: white !important;
+}
+
+@media screen and (max-width: 550px) {
+  .react-scrolltop-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    right: 4.8% !important;
+    bottom: 2.8% !important;
+    padding: 10px !important;
+  }
+}

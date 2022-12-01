@@ -32,7 +32,7 @@ export default function Example() {
             Blog
           </Link1>
 
-          <Link href="/">
+          <Link href="/contact">
             <a className="cursor-pointer text-base font-medium text-gray-500 hover:text-gray-900">
               Contact
             </a>

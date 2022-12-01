@@ -69,7 +69,7 @@ function Blog() {
                     <img
                       src={article.social_image}
                       className="object-contain w-full h-64 rounded"
-                      alt="articleImg"
+                      alt="IMG LOADING"
                     />
                   </a>
                   <div className="py-5">
