@@ -51,10 +51,11 @@ export default function Home() {
               We provide the best Coding blogs !
             </h1>
             <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
-              fuga molestias earum iure obcaecati! Deleniti laborum iste
-              mollitia velit? Natus, odio reprehenderit.
+              A platform for developers, that provides you service on
+              programming topics. Quality articles about development related
+              problems and news about latest technology.
             </p>
+
             <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
               <a
                 href="#"

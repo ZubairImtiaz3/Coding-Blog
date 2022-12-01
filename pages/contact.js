@@ -15,9 +15,9 @@ function contact() {
                   GET IN TOUCH WITH US
                 </h2>
                 <p className="text-body-color mb-9 text-base leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eius tempor incididunt ut labore et dolore magna aliqua. Ut
-                  enim adiqua minim veniam quis nostrud exercitation ullamco
+                  We can't solve your problem or impliment idea unless we came
+                  to know about it. Fill this form out to let us know about
+                  every query.
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className="bg-primary text-primary mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-opacity-5 sm:h-[70px] sm:max-w-[70px]">
@@ -35,7 +35,7 @@ function contact() {
                       Our Location
                     </h4>
                     <p className="text-body-color text-base">
-                      99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+                      Narowal, Punjab, Pakistan
                     </p>
                   </div>
                 </div>
@@ -57,7 +57,7 @@ function contact() {
                       Phone Number
                     </h4>
                     <p className="text-body-color text-base">
-                      (+62)81 414 257 9980
+                      (+92) 347 270 9395
                     </p>
                   </div>
                 </div>
@@ -77,7 +77,7 @@ function contact() {
                       Email Address
                     </h4>
                     <p className="text-body-color text-base">
-                      info@yourdomain.com
+                      Zubairimtiaz395@gmail.com
                     </p>
                   </div>
                 </div>
@@ -117,7 +117,7 @@ function contact() {
                   <div>
                     <button
                       type="submit"
-                      className="bg-primary border-primary w-full rounded border p-3 text-white transition hover:bg-opacity-90"
+                      className="bg-indigo-500 border-primary w-full rounded border p-3 text-white transition hover:bg-opacity-90"
                     >
                       Send Message
                     </button>

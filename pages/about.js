@@ -611,17 +611,17 @@ function about() {
                   Why Choose Us
                 </span>
                 <h2 className="text-dark mb-8 text-3xl font-bold sm:text-4xl">
-                  Make your customers happy by giving services.
+                  We Provide The Best Coding Articles, News & Blogs.
                 </h2>
                 <p className="text-body-color mb-8 text-base">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less.
+                  It is a long established fact that a developer will be face
+                  problems regarding how a technology works and the latest
+                  upcoming news about it. The point of developing this site is
+                  to keep the coders aware of every possible thing
                 </p>
                 <p className="text-body-color mb-12 text-base">
-                  A domain name is one of the first steps to establishing your
-                  brand. Secure a consistent brand image with a domain name that
-                  matches your business.
+                  A domain name is one of the first steps to establishing
+                  anything. Help us to buy domain if you found this site useful.
                 </p>
                 <a
                   href="#"
