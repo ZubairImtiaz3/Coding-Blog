@@ -24,7 +24,7 @@ export default function Home() {
               to="blogTop"
             >
               <div
-                className=" cursor-pointer inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
+                className="animate__animated animate__fadeInLeft animate__delay-1s cursor-pointer inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
                 role="alert"
               >
                 <span className="text-xs bg-indigo-600 rounded-full text-white px-4 py-1.5 mr-3">
@@ -47,16 +47,16 @@ export default function Home() {
                 </svg>
               </div>
             </Link1>
-            <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+            <h1 className="animate__animated animate__fadeIn mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
               We provide the best Coding blogs !
             </h1>
-            <p className="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+            <p className="animate__animated animate__fadeInUp animate__delay-2s mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
               A platform for developers, that provides you service on
               programming topics. Quality articles about development related
               problems and news about latest technology.
             </p>
 
-            <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+            <div className="animate__animated animate__fadeInUp animate__delay-3s flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
               <a
                 href="#"
                 className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-indigo-600 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
@@ -91,10 +91,10 @@ export default function Home() {
               </a>
             </div>
             <div className="px-4 mx-auto text-center md:max-w-screen-md lg:max-w-screen-lg lg:px-36">
-              <span className="font-semibold text-gray-400 uppercase">
+              <span className=" animate__animated animate__fadeIn animate__delay-4s font-semibold text-gray-400 uppercase">
                 FEATURED IN
               </span>
-              <div className="animate__animated animate__fadeInUp animate__delay-3s flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
+              <div className="animate__animated animate__fadeIn animate__delay-4s flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
                 <a
                   href="#"
                   className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"

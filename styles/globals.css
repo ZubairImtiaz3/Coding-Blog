@@ -1,8 +1,5 @@
 @tailwind base;
 @tailwind components;
-.animate__animated.animate__bounceIn {
-  --animate-duration: 3s;
-}
 @tailwind utilities;
 
 html,
