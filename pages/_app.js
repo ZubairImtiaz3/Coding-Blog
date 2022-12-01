@@ -1,6 +1,6 @@
 import "../styles/globals.css";
-import Navbar from "../Components/Navbar.js";
-import Footer from "../Components/Footer";
+import Navbar from "../components/Navbar.js";
+import Footer from "../components/Footer";
 
 //SCROLLTOTOP
 import ScrollTop from "react-scrolltop-button";
