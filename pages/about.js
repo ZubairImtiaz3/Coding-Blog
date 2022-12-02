@@ -4,7 +4,7 @@ import Image from "next/image";
 function about() {
   return (
     <>
-      <section className="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] text-center sm:text-left">
+      <section className="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] text-center lg:text-left">
         <div className="container mx-auto">
           <div className="-mx-4 flex flex-wrap items-center justify-between">
             <div className="w-full px-4 lg:w-6/12">
