@@ -74,42 +74,31 @@ function Blog() {
                 key={article.id}
                 className="overflow-hidden transition-shadow duration-300 bg-white rounded"
               >
-                {/* <Link
-                  href={article.url}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Article"
-                >
-                  <Image
-                    src={article.social_image}
-                    className="object-contain w-full h-64 rounded"
-                    alt="IMG LOADING"
-                    layout="fill"
-                  />
-                </Link> */}
+                {/* <Image
+                  src={article.social_image}
+                  className="object-contain w-full h-64 rounded"
+                  alt="IMG LOADING"
+                  layout="fill"
+                /> */}
+
                 <div className="py-5">
                   <p className="mb-2 text-xs font-semibold text-gray-600 uppercase">
                     {article.readable_publish_date}
                   </p>
-                  <Link
-                    href={article.url}
-                    target="_blank"
-                    rel="noreferrer"
+
+                  <a
                     aria-label="Article"
                     className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                   >
                     <p className="text-2xl font-bold leading-[26px]">
                       {article.title}
                     </p>
-                  </Link>
+                  </a>
 
                   <p className="mb-4 text-gray-700">{article.description}</p>
 
                   <div className="flex space-x-4">
-                    <Link
-                      href={article.url}
-                      target="_blank"
-                      rel="noreferrer"
+                    <a
                       aria-label="Likes"
                       className="flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group"
                     >
@@ -138,19 +127,12 @@ function Blog() {
                           />
                         </svg>
                       </div>
-                    </Link>
-
-                    <Link href={article.url} target="_blank" rel="noreferrer">
                       <p className="font-semibold">
                         {article.public_reactions_count}
                       </p>
-                    </Link>
-
-                    <Link
-                      href={article.url}
+                    </a>
+                    <a
                       aria-label="Comments"
-                      target="_blank"
-                      rel="noreferrer"
                       className="flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group"
                     >
                       <div className="mr-2">
@@ -178,11 +160,9 @@ function Blog() {
                           />
                         </svg>
                       </div>
-                    </Link>
 
-                    <Link href={article.url} target="_blank" rel="noreferrer">
                       <p className="font-semibold">{article.comments_count}</p>
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>
