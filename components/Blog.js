@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useQuery } from "react-query";
 import Image from "next/image";
-import Link from "next/link";
 
 // Animation
 import "animate.css/animate.min.css";
@@ -74,12 +73,12 @@ function Blog() {
                 key={article.id}
                 className="overflow-hidden transition-shadow duration-300 bg-white rounded"
               >
-                {/* <Image
-                  src={article.social_image}
-                  className="object-contain w-full h-64 rounded"
-                  alt="IMG LOADING"
-                  layout="fill"
-                /> */}
+                {/* <img
+                    src={article.social_image}
+                    className="object-contain w-full h-64 rounded"
+                    alt="IMG LOADING"
+                    layout="fill"
+                  /> */}
 
                 <div className="py-5">
                   <p className="mb-2 text-xs font-semibold text-gray-600 uppercase">
@@ -87,6 +86,9 @@ function Blog() {
                   </p>
 
                   <a
+                    href={article.url}
+                    target="_blank"
+                    rel="noreferrer"
                     aria-label="Article"
                     className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
                   >
@@ -95,10 +97,15 @@ function Blog() {
                     </p>
                   </a>
 
-                  <p className="mb-4 text-gray-700">{article.description}</p>
+                  <a href={article.url} target="_blank" rel="noreferrer">
+                    <p className="mb-4 text-gray-700">{article.description}</p>
+                  </a>
 
                   <div className="flex space-x-4">
                     <a
+                      href={article.url}
+                      target="_blank"
+                      rel="noreferrer"
                       aria-label="Likes"
                       className="flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group"
                     >
@@ -132,6 +139,9 @@ function Blog() {
                       </p>
                     </a>
                     <a
+                      href={article.url}
+                      target="_blank"
+                      rel="noreferrer"
                       aria-label="Comments"
                       className="flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group"
                     >
