@@ -54,7 +54,7 @@ function Blog() {
       </div>
 
       {isFetching ? (
-        <p className="font-bold text-center text-3xl mt-10 mb-10">
+        <p className="font-bold text-center text-xl sm:3xl mt-10 mb-10">
           Fetching New Blogs...
         </p>
       ) : null}
