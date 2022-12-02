@@ -1,11 +1,5 @@
 import React from "react";
-import dynamic from "next/dynamic";
-
-const Blog = dynamic(() => import("../components/Blog.js"), {
-  ssr: false,
-});
-
-// import Blog from "../components/Blog";
+import Blog from "../components/Blog";
 
 import { Link as Link1 } from "react-scroll";
 
@@ -205,7 +199,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <Blog />
+        {/* <Blog /> */}
         <ReactQueryDevtools />
       </QueryClientProvider>
     </>
