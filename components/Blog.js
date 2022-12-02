@@ -77,7 +77,6 @@ function Blog() {
                   src={article.social_image}
                   className="object-contain w-full h-64 rounded"
                   alt="IMG LOADING"
-                  // layout="fill"
                 />
 
                 <div className="py-5">
