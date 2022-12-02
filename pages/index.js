@@ -199,7 +199,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* <Blog /> */}
+        <Blog />
         <ReactQueryDevtools />
       </QueryClientProvider>
     </>
