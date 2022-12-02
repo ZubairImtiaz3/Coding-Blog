@@ -73,12 +73,12 @@ function Blog() {
                 key={article.id}
                 className="overflow-hidden transition-shadow duration-300 bg-white rounded"
               >
-                {/* <img
-                    src={article.social_image}
-                    className="object-contain w-full h-64 rounded"
-                    alt="IMG LOADING"
-                    layout="fill"
-                  /> */}
+                <img
+                  src={article.social_image}
+                  className="object-contain w-full h-64 rounded"
+                  alt="IMG LOADING"
+                  // layout="fill"
+                />
 
                 <div className="py-5">
                   <p className="mb-2 text-xs font-semibold text-gray-600 uppercase">
