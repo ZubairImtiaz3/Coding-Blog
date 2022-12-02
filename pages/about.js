@@ -13,14 +13,20 @@ function about() {
                   <div className="py-3 sm:py-4">
                     <Image
                       src="https://cdn.tailgrids.com/1.0/assets/images/services/image-1.jpg"
-                      alt=""
+                      width={270}
+                      height={320}
+                      layout="responsive"
+                      alt="MemberPic"
                       className="w-full rounded-2xl"
                     />
                   </div>
                   <div className="py-3 sm:py-4">
                     <Image
                       src="https://cdn.tailgrids.com/1.0/assets/images/services/image-2.jpg"
-                      alt=""
+                      width={270}
+                      height={320}
+                      layout="responsive"
+                      alt="MemberPic"
                       className="w-full rounded-2xl"
                     />
                   </div>
@@ -29,7 +35,10 @@ function about() {
                   <div className="relative z-10 my-4">
                     <Image
                       src="https://cdn.tailgrids.com/1.0/assets/images/services/image-3.jpg"
-                      alt=""
+                      width={270}
+                      height={320}
+                      layout="responsive"
+                      alt="MemberPic"
                       className="w-full rounded-2xl"
                     />
                     <span className="absolute -right-7 -bottom-7 z-[-1]">
