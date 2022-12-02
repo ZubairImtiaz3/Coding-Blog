@@ -11,10 +11,12 @@ function Blog() {
   //State for next,prev Page
   const [page, setpage] = useState(1);
 
-  const fetchArticles = (page = 1) =>
-    fetch("https://dev.to/api/articles?&per_page=9?&page=" + page).then((res) =>
-      res.json()
+  const fetchArticles = async (page) => {
+    const res = await fetch(
+      "https://dev.to/api/articles?&per_page=9?&page=" + page
     );
+    return res.json();
+  };
 
   const {
     isLoading,
@@ -52,11 +54,13 @@ function Blog() {
           </h2>
         </AnimationOnScroll>
       </div>
-      {/* {isFetching ? (
+
+      {isFetching ? (
         <p className="font-bold text-center text-3xl mt-10 mb-10">
           Fetching New Blogs...
         </p>
-      ) : null} */}
+      ) : null}
+
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <AnimationOnScroll
           animateIn="animate__fadeIn"
@@ -70,7 +74,7 @@ function Blog() {
                 key={article.id}
                 className="overflow-hidden transition-shadow duration-300 bg-white rounded"
               >
-                <Link
+                {/* <Link
                   href={article.url}
                   target="_blank"
                   rel="noreferrer"
@@ -80,8 +84,9 @@ function Blog() {
                     src={article.social_image}
                     className="object-contain w-full h-64 rounded"
                     alt="IMG LOADING"
+                    layout="fill"
                   />
-                </Link>
+                </Link> */}
                 <div className="py-5">
                   <p className="mb-2 text-xs font-semibold text-gray-600 uppercase">
                     {article.readable_publish_date}
@@ -97,10 +102,14 @@ function Blog() {
                       {article.title}
                     </p>
                   </Link>
+
                   <p className="mb-4 text-gray-700">{article.description}</p>
+
                   <div className="flex space-x-4">
                     <Link
-                      href="/"
+                      href={article.url}
+                      target="_blank"
+                      rel="noreferrer"
                       aria-label="Likes"
                       className="flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group"
                     >
@@ -129,13 +138,19 @@ function Blog() {
                           />
                         </svg>
                       </div>
+                    </Link>
+
+                    <Link href={article.url} target="_blank" rel="noreferrer">
                       <p className="font-semibold">
                         {article.public_reactions_count}
                       </p>
                     </Link>
+
                     <Link
-                      href="/"
+                      href={article.url}
                       aria-label="Comments"
+                      target="_blank"
+                      rel="noreferrer"
                       className="flex items-start text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-700 group"
                     >
                       <div className="mr-2">
@@ -163,6 +178,9 @@ function Blog() {
                           />
                         </svg>
                       </div>
+                    </Link>
+
+                    <Link href={article.url} target="_blank" rel="noreferrer">
                       <p className="font-semibold">{article.comments_count}</p>
                     </Link>
                   </div>

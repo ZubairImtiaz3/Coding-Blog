@@ -7,6 +7,6 @@ const nextConfig = {
 module.exports = {
   nextConfig,
   images: {
-    domains: ["cdn.tailgrids.com"],
+    domains: ["res.cloudinary.com"],
   },
 };
