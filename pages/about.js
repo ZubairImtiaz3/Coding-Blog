@@ -36,7 +36,7 @@ function about() {
                     <Image
                       src="https://cdn.tailgrids.com/1.0/assets/images/services/image-3.jpg"
                       width={270}
-                      height={320}
+                      height={400}
                       layout="responsive"
                       alt="MemberPic"
                       className="w-full rounded-2xl"
