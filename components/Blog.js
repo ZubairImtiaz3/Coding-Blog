@@ -49,11 +49,7 @@ function Blog() {
   return (
     <>
       <div id="blogTop" className="text-center mt-28">
-        <AnimationOnScroll
-          animateIn="animate__backInRight"
-          duration={1.5}
-          animateOnce
-        >
+        <AnimationOnScroll animateIn="animate__backInRight" animateOnce={true}>
           <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
             Our Latest blogs !
           </h2>
@@ -70,7 +66,7 @@ function Blog() {
         <AnimationOnScroll
           animateIn="animate__fadeIn"
           duration={3}
-          delay={500}
+          delay={300}
           animateOnce
         >
           <div className="grid gap-5 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
