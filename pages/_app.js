@@ -1,5 +1,9 @@
+import dynamic from "next/dynamic";
 import "../styles/globals.css";
-import Navbar from "../components/Navbar.js";
+const Navbar = dynamic(() => import("../components/Navbar.js"), {
+  ssr: false,
+});
+
 import Footer from "../components/Footer";
 
 //SCROLLTOTOP
@@ -10,11 +14,9 @@ function MyApp({ Component, pageProps }) {
     <>
       <Navbar />
       <ScrollTop
-        text="^"
         distance={500}
         className="react-scrolltop-button"
         speed={500}
-        target={10}
         breakpoint={2560}
       />
       <Component {...pageProps} />

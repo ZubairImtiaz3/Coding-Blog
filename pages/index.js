@@ -19,7 +19,7 @@ export default function Home() {
             <Link1
               spy={true}
               smooth={true}
-              offset={-40}
+              offset={-100}
               duration={900}
               to="blogTop"
             >
