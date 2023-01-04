@@ -50,7 +50,7 @@ function Blog() {
     <>
       <div id="blogTop" className="text-center mt-28">
         <AnimationOnScroll animateIn="animate__backInRight" animateOnce={true}>
-          <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+          <h2 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
             Our Latest blogs !
           </h2>
         </AnimationOnScroll>
@@ -193,7 +193,7 @@ function Blog() {
       <div className="btn-container flex justify-center items-center mb-20">
         <button
           onClick={fetchNextPage}
-          className=" cursor-pointer inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-indigo-600 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 disabled:bg-indigo-400"
+          className=" cursor-pointer inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-indigo-600 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 disabled:bg-indigo-400"
         >
           Load More
         </button>

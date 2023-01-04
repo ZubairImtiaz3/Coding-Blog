@@ -19,7 +19,8 @@ export default function Example() {
 
   window.addEventListener("scroll", navCheckToFix);
 
-  const navStyle = "mx-auto px-4 sm:px-6";
+  const navStyle =
+    "flex items-center justify-between md:justify-start md:space-x-10 px-4 sm:px-6";
 
   const spacerNavFix = <div className="h-[114px]"></div>;
 
@@ -27,17 +28,13 @@ export default function Example() {
     <>
       {navFix && spacerNavFix}
       <div
-        className={
-          navFix
-            ? `fixed w-full bg-gray-100 top-0 z-50 ${navStyle}`
-            : `${navStyle}`
-        }
+        className={navFix ? "w-full fixed bg-gray-100 top-0 z-50" : "w-full"}
       >
         <div
           className={
             navFix
-              ? "flex items-center justify-between py-2 md:justify-start md:space-x-10"
-              : "flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10"
+              ? `${navStyle} py-2`
+              : `${navStyle} border-b-2 border-gray-100 py-6`
           }
         >
           <div className="flex justify-start lg:w-0 lg:flex-1">

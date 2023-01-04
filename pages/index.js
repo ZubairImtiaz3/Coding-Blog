@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <QueryClientProvider client={queryClient} contextSharing={true}>
-        <section className="bg-white dark:bg-gray-900">
+        <section className="bg-white">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
             <Link1
               spy={true}
@@ -24,7 +24,7 @@ export default function Home() {
               to="blogTop"
             >
               <div
-                className="animate__animated animate__fadeInLeft cursor-pointer inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
+                className="animate__animated animate__fadeInLeft cursor-pointer inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full hover:bg-gray-200"
                 role="alert"
               >
                 <span className="text-xs bg-indigo-600 rounded-full text-white px-4 py-1.5 mr-3">
@@ -47,10 +47,10 @@ export default function Home() {
                 </svg>
               </div>
             </Link1>
-            <h1 className="animate__animated animate__fadeIn mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+            <h1 className="animate__animated animate__fadeIn mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl">
               We provide the best Coding blogs !
             </h1>
-            <p className="animate__animated animate__fadeInUp animate__slow mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">
+            <p className="animate__animated animate__fadeInUp animate__slow mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 ">
               A platform for developers, that provides you service on
               programming topics. Quality articles about development related
               problems and news about latest technology.
@@ -59,7 +59,7 @@ export default function Home() {
             <div className="animate__animated animate__fadeIn animate__delay-1s flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
               <a
                 href="#"
-                className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-indigo-600 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+                className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-indigo-600 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300"
               >
                 Learn more
                 <svg
@@ -77,7 +77,7 @@ export default function Home() {
               </a>
               <a
                 href="#"
-                className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+                className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100"
               >
                 <svg
                   className="mr-2 -ml-1 w-5 h-5"
@@ -95,10 +95,7 @@ export default function Home() {
                 FEATURED IN
               </span>
               <div className="animate__animated animate__fadeIn animate__delay-2s animate__faster flex flex-wrap justify-center items-center mt-8 text-gray-500 sm:justify-between">
-                <a
-                  href="#"
-                  className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
-                >
+                <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800">
                   <svg
                     className="h-8"
                     viewBox="0 0 132 29"
@@ -143,10 +140,7 @@ export default function Home() {
                     />
                   </svg>
                 </a>
-                <a
-                  href="#"
-                  className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
-                >
+                <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800">
                   <svg
                     className="h-11"
                     viewBox="0 0 208 42"
@@ -167,10 +161,7 @@ export default function Home() {
                     />
                   </svg>
                 </a>
-                <a
-                  href="#"
-                  className="mr-5 mb-5 lg:mb-0 hover:text-gray-800 dark:hover:text-gray-400"
-                >
+                <a href="#" className="mr-5 mb-5 lg:mb-0 hover:text-gray-800">
                   <svg
                     className="h-11"
                     viewBox="0 0 120 41"
