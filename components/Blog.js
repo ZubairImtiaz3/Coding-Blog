@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useInfiniteQuery } from "react-query";
 
-// Animation
+// Animation Imports
 import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
